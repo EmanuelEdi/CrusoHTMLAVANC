@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 02 - Criando e Formatando Formulários</title>
+</head>
+<body>
+    <!--Neste exemplo, os dados serão enviados ao endereço de e-mail especificado -->
+    <!--
+    <form action="mailto:endereco@eletrônico.com.br">
+        Conteudo da Tag From
+    </form>
+    -->
+     <!--Neste exemplo, os dados do formulário serão processados por meio de um código PHP -->
+    <!--
+    <form action="processa.php">
+        Conteudo da Tag From
+    </form>
+    -->
+    
+    <!-- Method: POST - GET 
+    <form action="url" method="get" ou "post"
+    -->
+
+    <!-- Tag Type Atributos:
+        IMAGE - Cria um botão de enviar baseado em uma imagem específica, cuja URL deve ser fornecida.
+        FILE - Criar um controle para seleção de arquivo. O valor do atributo deve ser configurado como o nome do arquivo
+        RESET - Cria um botão de reset, que limpa todos os campos.
+        BUTTON - Cria um botão para ser pressionado. O atributo deve ter o nome do botão 
+        SUBMIT - Cria um botão de enviar.
+        PASSWORD - Cria um campo de texto sem exibir o que está sendo digitado.
+        RADIO - Cria um botão de escolha única
+        TEXT - Cria um campo de texto de uma linha.
+        CHECKBOX - Cria caixa de seleção.
+        HIDDEN - Cria controle oculto.
+    -->
+
+    <!--
+    <form action="email@email.com" method="get">
+        <p>Nome: <input type="text" name="nome" size="25" maxlength="50"></p>
+        <p>Estado: <input type="text" name="uf" size="2" value="SP"></p>
+    </form>
+   -->
+
+   <!--
+   <form action="email@email.com" method="get">
+        <p>Nome: <input type="text" name="nome" size="25" maxlength="50"></p>
+        <p>N do cartão de crédito <input type="num" size="25" maxlength="18"></p>
+        <p>Senha: <input type="password" size="6" maxlength="25"></p>
+   </form>
+   -->
+   <!--
+        Para adicionar um radio button em um formulário, é usado o valor
+        Radio no atributo Type da tag Input.
+        Para exibir uma das opções selecionadas como padrão, usamos o atributo CHECKED na tag.
+
+   <form action="email@email.com" method="get">
+    <p>Nome: <input type="text" name="nome" size="25" maxlength="50"></p>
+    <p>N do cartão de crédito <input type="num" size="25" maxlength="18"></p>
+    <p>Senha: <input type="password" size="6" maxlength="25"></p>
+
+    <p>Selecione a Bandeira do cartão de crédito <br>
+    <input type="radio" name="selecao-cartao">Visa <br>
+    <input type="radio" name="selecao-cartao">MasterCard
+    </p>
+    </form>
+    -->
+
+    <!--
+        Em um formulário de pedido, podemos usar um conjunto de checkboxes
+        para obter a informação sobre os horários de entrega do pedido.
+        Para adicionar um checkbox, basta especficar o valor checkbox no type.
+    
+    <form action="email@email.com" method="get">
+        <p>Nome: <input type="text" name="nome" size="25" maxlength="50"></p>
+        <p>N do cartão de crédito <input type="num" size="25" maxlength="18"></p>
+        <p>Senha: <input type="password" size="6" maxlength="25"></p>
+    
+        <p>Selecione a Bandeira do cartão de crédito <br>
+        <input type="radio" name="selecao-cartao">Visa <br>
+        <input type="radio" name="selecao-cartao">MasterCard</p>
+
+        <p>Selecione horário de entrega: <br>
+            <input type="checkbox" name="horario2" size="1">8h ás 12h <br>
+            <input type="checkbox" name="horario2" size="1">13h ás 15h <br>
+            <input type="checkbox" name="horario2" size="1">16h ás 18h 
+        </p>
+        </form>
+    -->
+    <!-- Textarea é responsavel pela craição desse campo especial
+    Os atributos ROWS, que especifica o núemro de linha(Altura) e 
+    COLS, que especifica o númeor de colunas (Largura) da área de texto são
+    utilizados com essa tag.
+
+    -->
+    <FORM ACTION="email@email.com" METHOD="get">
+        <P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+        <P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+        <P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+        <P>Selecione a bandeira do cartão de crédito:<BR> 
+            <INPUT TYPE=radio NAME="vi" CHECKED>VISA<BR> 
+            <INPUT TYPE=radio NAME="mst">MASTERCARD</P>
+        <P>Selecione horário de entrega:<BR> 
+            <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR> 
+            <INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR> 
+            <INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h</P>
+        <P>Endereço: <INPUT TYPE=TEXT  NAME="end"  SIZE="30"</P>
+        <P>Referência: <TEXTAREA NAME="ref" ROWS="2" COLS= "40"></TEXTAREA></P>
+     </FORM>
+</body>
+</html>
